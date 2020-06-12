@@ -15,6 +15,7 @@ var finalOptions = "";
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 function writePassword() {
+  finalOptions = "";
   var userLength = window.prompt("Please enter your desired password length");
 
   if (userLength < 8) {
