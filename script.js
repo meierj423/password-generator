@@ -19,12 +19,15 @@ function writePassword() {
 
   if (userLength < 8) {
     alert("Your password must be at least 8 characters long");
+    return;
   }
   else if (userLength > 128) {
     alert("Your password cannot be greater than 128 characters");
+    return;
   }
   else if (isNaN(userLength)) {
-    alert("Only numerical values are accepted")
+    alert("Only numerical values are accepted");
+    return;
   }
   else {
     var proceed = true;
@@ -78,7 +81,10 @@ function writePassword() {
     document.getElementById("password").value = password;
   }
 
+  writePassword();
 
-// testing commit
+  // location.reload();
+
+
 
 }
