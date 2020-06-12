@@ -13,5 +13,5 @@ This application generates a password in the browser.
 
 See URL for demo: https://meierj423.github.io/password-generator/
 
-![](Assets/password-generator.png)
+![](Assets/default-password-generator.png)
 ![](Assets/working-password.png)
