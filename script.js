@@ -25,7 +25,36 @@ function writePassword() {
   else if (isNaN(userLength)) {
     alert("Only numerical values are accepted")
   }
+  else {
+    var proceed = true;
+  }
+
+  if (proceed === true) {
+    var speChars = window.confirm("Would you like your password to contain special characters?");
+    var numChars = window.confirm("Would you like your password to contain numbers?");
+    var lowerChars = window.confirm("Would you like your password to contain lower case letters?");
+    var upperChars = window.confirm("Would you like your password to contain upper case letters?"); 
+  }
+
+  // Code wouldn't work without this else statement
+  else {
+    alert('error');
+  }
+
+  if (speChars === true || numChars === true || lowerChars === true || upperChars === true) {
+    alert("proceed");
+  }
+  else {
+    alert("Your password must contain at least one of the previous criteria");
+  }
+  
+  
+   
+    
+  
 }
+// var confirm = window.confirm("Would you like your password to contain special characters?")
+//     alert("you chose " + confirm);
 
 // From Office Hours
 // function generatePassword() {
